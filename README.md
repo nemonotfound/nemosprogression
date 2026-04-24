@@ -1,4 +1,4 @@
-# Nemo's Backpacks
+# Nemo's Progression
 
 ## Description
 Nemo's Progression introduces a new progression system.
