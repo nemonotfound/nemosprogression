@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.nemonotfound.nemos.progression.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [],
+  "mixins": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}

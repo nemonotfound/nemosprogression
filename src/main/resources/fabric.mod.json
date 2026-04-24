@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "nemos_progression",
+	"version": "${version}",
+	"name": "Nemo's Progression",
+	"description": "Disable regular crafting for tools/weapons/armor from copper onward. Progression now relies on upgrade templates, making every gear piece more valuable.",
+	"authors": [
+		"Nemo"
+	],
+	"contact": {
+		"homepage": "https://nemonotfound.com/",
+		"sources": "https://github.com/NemoNotFound/NemosProgression"
+	},
+	"license": "ARR",
+	"icon": "assets/nemos_progression/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nemonotfound.nemos.progression.NemosProgression"
+		],
+		"client": [
+			"com.nemonotfound.nemos.progression.client.NemosProgressionClient"
+		],
+		"fabric-datagen": [
+			"com.nemonotfound.nemos.progression.client.DataGenerator"
+		]
+	},
+	"mixins": [
+		"nemos_progression.mixins.json",
+		{
+			"config": "nemos_progression.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": ">=${minecraft_version}",
+		"java": ">=${java_version}",
+		"fabric-api": "*",
+		"nemos_upgrade_templates": ">=${nemos_upgrade_templates_version}"
+	}
+}
