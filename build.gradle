@@ -127,7 +127,7 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
 	mainFile.displayName = findProperty('mod_name') + ' ' + findProperty('version')
 	mainFile.releaseType = 'release'
 	mainFile.addEnvironment("Server")
-	mainFile.addJavaVersion("Java 25")
+	mainFile.addJavaVersion("Java 21")
 	mainFile.addRequirement("fabric-api")
 	mainFile.addRequirement("nemos-upgrade-templates")
 }
